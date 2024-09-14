@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  font-weight: 14px;
+  list-style-type: none;
+}
+
+body {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  font-family: "Noto Sans", sans-serif;
+}
+
+header.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 29px 133px;
+}
+header.main .logo {
+  font-size: 24px;
+}
+header.main ul {
+  display: flex;
+  flex-direction: row;
+}
+header.main ul li {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #ADADAD;
+}
+header.main ul li.active {
+  color: #FFFFFF;
+}
+
+section.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 133px;
+  position: relative;
+}
+section.hero .text {
+  width: 586px;
+}
+section.hero .text h3 {
+  font-size: 48px;
+  margin-top: 42px;
+}
+section.hero .text p {
+  margin-top: 27px;
+  color: #ADADAD;
+}
+section.hero .text button {
+  margin-top: 29px;
+  padding: 12px 32px;
+  background-color: #313131;
+  color: #DEDEDE;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+section.hero .image {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 50%;
+  overflow: hidden;
+}
+section.hero .image .first {
+  display: block;
+  rotate: 10.58deg;
+  z-index: 1;
+}
+section.hero .image .second {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+section.chess-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 36px;
+}
+section.chess-action div.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+section.chess-action div.line hr {
+  background-color: #343434;
+  width: 100%;
+  height: 2px;
+  border: none;
+}
+section.chess-action .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #313131;
+  width: 50%;
+  border-radius: 8px;
+  position: relative;
+}
+section.chess-action .content img {
+  position: absolute;
+  bottom: 20px;
+  left: 2%;
+}
+section.chess-action .content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 150px;
+}
+section.chess-action .content ul li span {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+section.chess-action .content ul li p {
+  padding-top: 10px;
+  text-transform: uppercase;
+  color: #B3B3B3;
+  font-size: 18px;
+}
+
+section.partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 36px;
+}
+section.partners div.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+section.partners div.line hr {
+  background-color: #343434;
+  width: 100%;
+  height: 2px;
+  border: none;
+}
+section.partners .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #313131;
+  width: 50%;
+  border-radius: 8px;
+  padding: 40px 30px 40px 130px;
+}
+
+section.why-us {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 13px;
+}
+section.why-us .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  position: relative;
+}
+section.why-us .heading div.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+section.why-us .heading div.line hr {
+  background-color: #343434;
+  width: 100%;
+  height: 2px;
+  border: none;
+}
+section.why-us .heading p {
+  position: absolute;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #1F1F1F;
+  width: 5%;
+}
+section.why-us .items {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 75px;
+  margin: 133px;
+}
+section.why-us .items .item1 {
+  grid-row: 1/span 2;
+  grid-column: 2/span 1;
+}
+section.why-us .items .item1 img {
+  width: 192px;
+  height: 428px;
+}
+section.why-us .items .item2 {
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
+}
+section.why-us .items .item3 {
+  grid-row: 1/span 1;
+  grid-column: 3/span 1;
+}
+section.why-us .items .item4 {
+  grid-row: 2/span 1;
+  grid-column: 1/span 1;
+}
+section.why-us .items .item5 {
+  grid-row: 2/span 1;
+  grid-column: 3/span 1;
+}
+section.why-us .items .item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 411px;
+  height: 233px;
+  background-color: #343434;
+  padding-right: 26px;
+  padding-left: 26px;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=styles.css.map */

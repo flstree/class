@@ -1,0 +1,11 @@
+@mixin horizontal-line($length){
+    background-color: #343434;
+    width: 100%;
+    height: $length;
+    border: none;
+}
+
+@mixin matrix($row, $column) {
+    grid-row: $row / span 1;
+    grid-column: $column / span 1;
+}
