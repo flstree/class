@@ -51,4 +51,5 @@ pi = 3242; //throws an error
 let x = 5;
 let y = 10;
 let div = x / y;
-console.log(div);
+
+//RUN COMMAND: nodde index.js
