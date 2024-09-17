@@ -1,7 +1,6 @@
 //containers
 
 //Number Data types
-var age = 40;
 var temperature = 98.6;
 
 //Strings
@@ -36,7 +35,7 @@ console.log("Big Number: ", bigNumber); // 9007199254740991
 var string = 40;
 
 //Object
-let user = {
+var user = {
   firstName: "John",
   lastName: "Doe",
   age: 40,
@@ -44,4 +43,12 @@ let user = {
 };
 
 //Arrays
-let fruits = ["Mango", "Banana"];
+var fruits = ["Mango", "Banana"];
+
+const PI = 3.142;
+pi = 3242; //throws an error
+
+let x = 5;
+let y = 10;
+let div = x / y;
+console.log(div);
