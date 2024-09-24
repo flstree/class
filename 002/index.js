@@ -239,13 +239,27 @@ const bmiDifference = Math.round(calculateMarksBMI, 2) - Math.round(calculateJoh
 //   return `Hello, ${name}`;
 // }
 
-try {
-  // Code that might throw an error
-  let result = riskyOperation();
-} catch (error) {
-  console.error("An error occurred:", error.message);
-}
+// try {
+//   // Code that might throw an error
+//   let result = riskyOperation();
+// } catch (error) {
+//   console.error("An error occurred:", error.message);
+// }
 
 //RUN COMMAND: node index.js
+
+//for (start; end; increment)
+// for(let i=1; i<=100; i++){
+//   if(i % 3 === 0 && i % 5 === 0){
+//       console.log('FizzBuzz');
+//   }else if(i % 3 === 0){
+//       console.log('Fizz');
+//   }else if(i % 5 === 0){
+//       console.log('Buzz');
+//   }else{
+//     console.log(i);
+//   }
+// }
+
 
 
