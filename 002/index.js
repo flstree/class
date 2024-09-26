@@ -261,5 +261,19 @@ const bmiDifference = Math.round(calculateMarksBMI, 2) - Math.round(calculateJoh
 //   }
 // }
 
+function countVowels(string) {
+  let vowels = 0;
+  string = string.toLowerCase();
+  const vowelsArray = ["a", "e", "i", "o", "u"];
+  for (let i = 0; i < string.length; i++) {
+    if (vowelsArray.includes(string[i])) {
+      vowels = vowels + 1;
+    }
+  }
+  return vowels;
+}
 
+let string = "harry";
+
+console.log(countVowels(string));
 
