@@ -1,6 +1,4 @@
 const input = document.getElementById("inputValue");
-const userInput = input.value;
-
 const tailsOutput = document.querySelector("#tails");
 const headsOutput = document.querySelector("#heads");
 const button = document.querySelector("#runButton");
@@ -11,7 +9,7 @@ function flipCoin() {
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
-  const userInput = input.value; 
+  const userInput = input.value;
   console.log("user input", userInput);
   let flips = {
     heads: 0,
@@ -27,6 +25,6 @@ button.addEventListener("click", function (event) {
     }
   }
 
-  headsOutput.innerHTML = flips.heads;
-  tailsOutput.innerHTML = flips.tails;
+  headsOutput.innerHTML = `Heads: ${flips.heads}`;
+  tailsOutput.innerHTML = `Tails ${flips.tails}`;
 });
