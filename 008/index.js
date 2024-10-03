@@ -11,6 +11,7 @@ function flipCoin() {
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
+  const userInput = input.value; 
   console.log("user input", userInput);
   let flips = {
     heads: 0,
