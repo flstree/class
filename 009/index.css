@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    gap: 0.5rem;
+    width: 50%;
+}
+
+.input #todoListInput{
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #0c0c0c;
+    width: 100%;
+}
+
+.input #todoListInput:hover {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #6f736f;
+}
+
+.input #todoListButton {
+    padding: 0.25rem 1.5rem
+}
+
+.list {
+    width: 50%;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.list li {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
