@@ -9,6 +9,16 @@ const darkMode = document.getElementById("darkMode");
 const lightMode = document.getElementById("lightMode");
 const body = document.querySelector("body");
 
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    console.log("pressing enter, not hacking this");
+    const inputBox = input.value?.toLowerCase();
+    arrayOfItems.push(inputBox);
+
+    buildlist();
+  }
+});
+
 button.addEventListener("click", function (event) {
   event.preventDefault();
   const inputBox = input.value?.toLowerCase();
