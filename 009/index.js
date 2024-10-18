@@ -4,12 +4,30 @@ const list = document.querySelector(".list");
 let arrayOfItems = [];
 let counter = 0;
 
+//Light mode dark mode
+const darkMode = document.getElementById("darkMode");
+const lightMode = document.getElementById("lightMode");
+const body = document.querySelector("body");
+
 button.addEventListener("click", function (event) {
   event.preventDefault();
   const inputBox = input.value?.toLowerCase();
   arrayOfItems.push(inputBox);
 
   buildlist();
+});
+
+darkMode.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  body.style.backgroundColor = "#0c0c0c";
+  list.style.color = "#ffffff";
+});
+
+lightMode.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  body.style.backgroundColor = "#ffffff";
 });
 
 function deleteList(index) {
