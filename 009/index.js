@@ -4,9 +4,10 @@ const list = document.querySelector(".list");
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
-  const inputBox = input.value;
+  const inputBox = input.value?.toLowerCase();
   list.innerHTML += `<li>
             <input type="checkbox" name="listItem" value="${inputBox}">
             <label for="listItem">${inputBox}</label>
+            <span>X</span>
         </li>`;
 });
