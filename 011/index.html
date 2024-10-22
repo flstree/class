@@ -1,0 +1,70 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <!-- <button>Click me</button>
+    <p id="message"></p> -->
+    <button id="myButton">Click me</button>
+    <div id="myDiv" style="width: 50px; height: 50px; background-color: black;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+    //   $(document).ready(function() {
+    //     $('button').click(function() {
+    //       $('#message').text('Hello, jQuery!');
+    //     });
+    //   });
+
+    //   $(document).ready(function() {
+    //         $('#myButton').on('click', function() {
+    //             alert('Button clicked!');
+    //         });
+    //   });
+
+    //   $.ajax({
+    //     url: 'https://jsonplaceholder.typicode.com/todosshdsd',
+    //     method: 'GET',
+    //     success: function(response) {
+    //         $('#todosList').text(JSON.stringify(response));
+    //     },
+    //     error: function(error){
+    //         console.log(error)
+    //     }
+    //   });
+    // $('#myDiv').hide();
+    
+    //   $(document).ready(function() {
+    //         $('#myButton').on('click', function() {
+    //             $('#myDiv').fadeToggle('slow');
+    //         });
+    //   });
+
+    //   $.each([1, 2, 3], function(index, value) {
+    //     console.log(index + ': ' + value);
+    //   });
+
+    const numbers = [1, 2, 3, 4, 5];
+    console.log(_.chunk(numbers, 2)); // [[1, 2], [3, 4], [5]]
+    console.log(_.compact([0, 1, false, 2, '', 3])); // [1, 2, 3]
+
+    const user = { 'name': 'John', 'age': 30, 'city': 'New York' };
+    console.log(_.pick(user, ['name', 'age'])); // { 'name': 'John', 'age': 30 }
+    console.log(_.merge({ 'a': 1 }, { 'b': 2 })); // { 'a': 1, 'b': 2 }
+
+    const add = (a, b) => a + b;
+    const debouncedAdd = _.debounce(add, 300);
+
+    debouncedAdd(1, 2); // The function will be executed after 300ms
+
+    const users = [
+        { 'user': 'barney', 'age': 36, 'active': true },
+        { 'user': 'fred', 'age': 40, 'active': false }
+    ];
+
+    console.log(_.find(users, { 'age': 36 })); // { 'user': 'barney', 'age': 36, 'active': true }
+    console.log(_.map(users, 'user')); // ['barney', 'fred']
+    </script>
+  </body>
+</html>
