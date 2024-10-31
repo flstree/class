@@ -1,8 +1,15 @@
-function TodoListItems() {
+function TodoListItems({ todoItems, onDeleteItem }) {
   return (
     <div>
-      <ul class="list">
-        <li>Todo</li>
+      <ul className="list">
+        {todoItems?.map((item, index) => {
+          return (
+            <li key={index}>
+              {item} -{" "}
+              <button onClick={(e) => onDeleteItem(index)}>delete</button>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
