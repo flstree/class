@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>My TodoList application</p>
+      <p>My TodoList App</p>
       <TodoListInput todoItemAdded={addTodoList} />
       <TodoListItems todoItems={items} onDeleteItem={removeItemFromList} />
     </div>
