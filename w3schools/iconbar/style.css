@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FF8000;
+    color: #EEEEEE;
+}
+
+nav {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    background-color: #219B9D;
+}
+
+nav a {
+    padding: 1.5rem 2.3rem;
+}
+
+nav a i {
+    color: #EEEEEE;
+}
+
+nav a.active {
+    background-color: #4C1F7A;
+}
