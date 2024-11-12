@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import TodoListInput from "./components/TodoListInput";
 import TodoListItems from "./components/TodoListItems";
+import Counter from "./components/Counter";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -20,9 +21,10 @@ function App() {
 
   return (
     <div className="App">
-      <p>My TodoList App</p>
+      <Counter />
+      {/* <p>My TodoList App</p>
       <TodoListInput todoItemAdded={addTodoList} />
-      <TodoListItems todoItems={items} onDeleteItem={removeItemFromList} />
+      <TodoListItems todoItems={items} onDeleteItem={removeItemFromList} /> */}
     </div>
   );
 }
